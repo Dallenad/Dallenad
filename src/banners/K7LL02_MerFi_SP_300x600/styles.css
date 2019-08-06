@@ -1,0 +1,273 @@
+$charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0px;
+}
+
+#content {
+	background-color: #F9C92B;
+	width: 300px;
+	height: 600px;
+	border: 1px solid #000;
+	display: block;
+	position: relative;
+	cursor: pointer;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	overflow: hidden;
+}
+
+footer {
+	position: absolute;
+	background-color: #FFF;
+	width: 100%;
+	height: 84px;
+	bottom: 0px;
+}
+
+#line1 {
+	position: absolute;
+	width: 86px;
+	height: 75px;
+	top: 0px;
+	left: 0px;
+	background: url(lines.svg) no-repeat -167px -58px;
+}
+
+#line1Mask {
+	width: 96px;
+	height: 95px;
+	position: absolute;
+	left: 192px;
+	top: 61px;
+	overflow: hidden;
+}
+
+#line2 {
+	position: absolute;
+	width: 72px;
+	height: 62px;
+	top: 10px;
+	left: 40px;
+	background: url(lines.svg) no-repeat -30px -120px;
+}
+
+#line2Mask {
+	width: 112px;
+	height: 62px;
+	position: absolute;
+	left: 11px;
+	top: 110px;
+	overflow: hidden;
+}
+
+#line3 {
+	position: absolute;
+	width: 27px;
+	height: 25px;
+	left: 170px;
+	top: 206px;
+	background: url(lines.svg) no-repeat -170px -206px;
+}
+
+#line4 {
+	position: absolute;
+	width: 3px;
+	height: 58px;
+	left: 243px;
+	top: 227px;
+	background: url(lines.svg) no-repeat -243px -227px;
+}
+
+#line5 {
+	position: absolute;
+	width: 30px;
+	height: 24px;
+	left: 97px;
+	top: 298px;
+	background: url(lines.svg) no-repeat -97px -298px;
+}
+
+#line6 {
+	position: absolute;
+	width: 62px;
+	height: 73px;
+	top: 0px;
+	left: 0px;
+	background: url(lines.svg) no-repeat -51px -322px;
+}
+
+#line6Mask {
+	width: 62px;
+	height: 93px;
+	position: absolute;
+	left: 51px;
+	top: 322px;
+	overflow: hidden;
+}
+
+#line7 {
+	position: absolute;
+	width: 79px;
+	height: 103px;
+	top: 0px;
+	left: 0px;
+	background: url(lines.svg) no-repeat -149px -398px;
+}
+
+#line7Mask {
+	width: 79px;
+	height: 123px;
+	position: absolute;
+	left: 149px;
+	top: 398px;
+	overflow: hidden;
+}
+
+#text1 {
+	position: absolute;
+	width: 250px;
+	height: 55px;
+	left: 34px;
+	top: 14px;
+	background: url(content.png) no-repeat -34px -13px;
+	z-index: +1;
+}
+
+#text2 {
+	position: absolute;
+	width: 161px;
+	height: 55px;
+	left: 13px;
+	top: 182px;
+	background: url(content.png) no-repeat -13px -182px;
+	z-index: +1;
+}
+
+#text3 {
+	position: absolute;
+	width: 164px;
+	height: 55px;
+	left: 120px;
+	top: 278px;
+	background: url(content.png) no-repeat -120px -278px;
+	z-index: +1;
+}
+
+#text4 {
+	position: absolute;
+	width: 202px;
+	height: 55px;
+	left: 84px;
+	top: 367px;
+	background: url(content.png) no-repeat -84px -367px;
+	z-index: +1;
+}
+
+#icon1 {
+	position: absolute;
+	width: 58px;
+	height: 58px;
+	left: 122px;
+	top: 92px;
+	background: url(content.png) no-repeat -101px -89px;
+	z-index: +1;
+}
+
+#dollar {
+  	position: absolute;
+	width: 27px;
+	height: 27px;
+  	left: 138px;
+	top: 107px;
+	background: url(content.png) no-repeat -117px -104px;
+	z-index: +1;
+}
+
+#icon2 {
+	position: absolute;
+	width: 82px;
+	height: 75px;
+	left: 204px;
+	top: 162px;
+	background: url(content.png) no-repeat -204px -162px;
+	z-index: +1;
+}
+
+#icon3 {
+	position: absolute;
+	width: 80px;
+	height: 63px;
+	left: 14px;
+	top: 277px;
+	background: url(content.png) no-repeat -14px -277px;
+	z-index: +1;
+}
+
+#coin {
+	position: absolute;
+	width: 16px;
+	height: 17px;
+	left: 37px;
+	top: 259px;
+	background: url(content.png) no-repeat -37px -259px;
+	z-index: +1;
+}
+
+#coinEdge {
+	position: absolute;
+	width: 16px;
+	height: 17px;
+	left: 37px;
+	top: 259px;
+	background: url(content.png) no-repeat -37px -259px;
+	z-index: +1;
+}
+
+#icon4 {
+	position: absolute;
+	width: 84px;
+	height: 73px;
+	left: 62px;
+	top: 441px;
+	background: url(content.png) no-repeat -62px -443px;
+	z-index: +1;
+}
+
+#logo {
+	position: absolute;
+	width: 112px;
+	height: 37px;
+	left: 14px;
+	top: 24px;
+	background: url(content.png) no-repeat -14px -540px;
+}
+
+#cta {
+	position: absolute;
+	width: 116px;
+	height: 29px;
+	left: 166px;
+	top: 24px;
+	background: url(content.png) no-repeat -166px -540px;
+}
+
+#ctaShine {
+	position: absolute;
+	width: 116px;
+	height: 29px;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(to right, rgba(204, 204, 204, 0), rgba(255, 255, 255, 0.5), rgba(204, 204, 204, 0));
+    background-position: -116px 0;
+}
+
+#terms {
+	position: absolute;
+	width: 49px;
+	height: 9px;
+	left: 200px;
+	top: 58px;
+	background: url(content.png) no-repeat -200px -574px;
+}

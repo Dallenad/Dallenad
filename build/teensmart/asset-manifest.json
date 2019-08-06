@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/teensmart/static/css/main.3f1e4546.chunk.css",
+    "main.js": "/teensmart/static/js/main.f65565ed.chunk.js",
+    "main.js.map": "/teensmart/static/js/main.f65565ed.chunk.js.map",
+    "runtime~main.js": "/teensmart/static/js/runtime~main.da6f5a97.js",
+    "runtime~main.js.map": "/teensmart/static/js/runtime~main.da6f5a97.js.map",
+    "static/js/2.0beb533f.chunk.js": "/teensmart/static/js/2.0beb533f.chunk.js",
+    "static/js/2.0beb533f.chunk.js.map": "/teensmart/static/js/2.0beb533f.chunk.js.map",
+    "index.html": "/teensmart/index.html",
+    "precache-manifest.e18460f14d1450e248abb9d293974fe4.js": "/teensmart/precache-manifest.e18460f14d1450e248abb9d293974fe4.js",
+    "service-worker.js": "/teensmart/service-worker.js",
+    "static/css/main.3f1e4546.chunk.css.map": "/teensmart/static/css/main.3f1e4546.chunk.css.map",
+    "static/media/App.css": "/teensmart/static/media/Quicksand_Book.dd2da1d8.otf",
+    "static/media/icon-facebook.png": "/teensmart/static/media/icon-facebook.dc5c6da1.png",
+    "static/media/icon-mail.png": "/teensmart/static/media/icon-mail.59fb1fc4.png",
+    "static/media/icon-skype.png": "/teensmart/static/media/icon-skype.2f8404b0.png",
+    "static/media/icon-twitter.png": "/teensmart/static/media/icon-twitter.8cdbcd61.png",
+    "static/media/icon-youtube.png": "/teensmart/static/media/icon-youtube.063ecaa8.png"
+  }
+}

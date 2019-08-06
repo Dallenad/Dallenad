@@ -1,0 +1,465 @@
+/* 
+v1.0.1
+Last Updated: 2010-09-17
+Author: Prodigious Dev team
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+div {
+	position: absolute;
+}
+
+
+/*/////-FONTS-//////*/
+
+$font-face {
+    font-family: 'BentonSans';
+    src: local("Benton Sans Regular");
+    src: url("https://www.aexp-static.com/nav/ngn/fonts/3be50273-0b2e-4aef-ae68-882eacd611f9-2.eot");
+    src: url("https://www.aexp-static.com/nav/ngn/fonts/3be50273-0b2e-4aef-ae68-882eacd611f9-2.eot?") format("embedded-opentype"), url("https://www.aexp-static.com/nav/ngn/fonts/3be50273-0b2e-4aef-ae68-882eacd611f9-3.woff") format("woff"), url("https://www.aexp-static.com/nav/ngn/fonts/3be50273-0b2e-4aef-ae68-882eacd611f9-1.ttf") format("truetype"), url("https://www.aexp-static.com/nav/ngn/fonts/3be50273-0b2e-4aef-ae68-882eacd611f9-4.svg#web") format("svg");
+    font-style: normal;
+    font-weight: normal
+}
+
+$font-face {
+    font-family: 'BentonSans-Bk';
+    src: local("Benton Sans Book");
+    src: url("https://www.aexp-static.com/nav/ngn/fonts/325e6ad0-38fb-4bad-861c-d965eab101d5-2.eot");
+    src: url("https://www.aexp-static.com/nav/ngn/fonts/325e6ad0-38fb-4bad-861c-d965eab101d5-2.eot?") format("embedded-opentype"), url("https://www.aexp-static.com/nav/ngn/fonts/325e6ad0-38fb-4bad-861c-d965eab101d5-3.woff") format("woff"), url("https://www.aexp-static.com/nav/ngn/fonts/325e6ad0-38fb-4bad-861c-d965eab101d5-1.ttf") format("truetype"), url("https://www.aexp-static.com/nav/ngn/fonts/325e6ad0-38fb-4bad-861c-d965eab101d5-4.svg#web") format("svg");
+    font-style: normal;
+    font-weight: normal
+}
+
+$font-face {
+    font-family: 'BentonSans-Md';
+    src: local("Benton Sans Medium");
+    src: url("https://www.aexp-static.com/nav/ngn/fonts/0fababca-4914-46dd-9b0f-efbd51f67ae8-2.eot");
+    src: url("https://www.aexp-static.com/nav/ngn/fonts/0fababca-4914-46dd-9b0f-efbd51f67ae8-2.eot?") format("embedded-opentype"), url("https://www.aexp-static.com/nav/ngn/fonts/0fababca-4914-46dd-9b0f-efbd51f67ae8-3.woff") format("woff"), url("https://www.aexp-static.com/nav/ngn/fonts/0fababca-4914-46dd-9b0f-efbd51f67ae8-1.ttf") format("truetype"), url("https://www.aexp-static.com/nav/ngn/fonts/0fababca-4914-46dd-9b0f-efbd51f67ae8-4.svg#web") format("svg");
+    font-style: normal;
+    font-weight: bold
+}
+
+$font-face {
+  font-family: 'BentonSans-Bd';
+  src: local("Benton Sans Bold");
+  src: url("https://www.aexp-static.com/nav/ngn/fonts/342cdec0-7d5d-43a9-84bf-8a77730526ee-2.eot");
+  src: url("https://www.aexp-static.com/nav/ngn/fonts/342cdec0-7d5d-43a9-84bf-8a77730526ee-2.eot?") format("embedded-opentype"),url("https://www.aexp-static.com/nav/ngn/fonts/342cdec0-7d5d-43a9-84bf-8a77730526ee-3.woff") format("woff"),url("https://www.aexp-static.com/nav/ngn/fonts/342cdec0-7d5d-43a9-84bf-8a77730526ee-1.ttf") format("truetype"),url("https://www.aexp-static.com/nav/ngn/fonts/342cdec0-7d5d-43a9-84bf-8a77730526ee-4.svg#web") format("svg");
+  font-style: normal;
+  font-weight: bold
+}
+/*FONT CLASS*/
+
+.fontRegular {
+    font-family: 'BentonSans';
+}
+
+.fontBook {
+    font-family: 'BentonSans-Bk';
+}
+
+.fontMedium {
+    font-family: 'BentonSans-Md';
+}
+
+.fontBold {
+    font-family: 'BentonSans-Bd';
+}
+
+#container {
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 250px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: #FFF;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    overflow: hidden;
+    opacity: 0;
+}
+
+#banner {
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 250px;
+    display: block;
+    overflow: hidden;
+}
+
+
+/*This Class center the width of the elements against the global width of the entire banner, so the width should be set as 0*/
+
+.center {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.shadow{
+    text-shadow: 0 0 40px #000000;
+}
+
+/*/////////////////TEXTURE-PACKER//////////////*/
+
+
+/*Texturepacker Sprites in folder assets > Sprites*/
+
+.sprite {display: inline-block;overflow: hidden;background-repeat: no-repeat;background-image: url(sprite.png);}
+
+.Apples {width:96px; height:52px; background-position: -36px -202px}
+.Brushes {width:156px; height:174px; background-position: -2px -2px}
+.CookBook {width:85px; height:102px; background-position: -36px -256px}
+.Eggs {width:80px; height:35px; background-position: -160px -2px}
+.Oven-mit {width:83px; height:115px; background-position: -159px -204px}
+.Roller {width:32px; height:162px; background-position: -2px -202px}
+.SmallGreenSpoon {width:23px; height:77px; background-position: -134px -202px}
+.Swatches {width:69px; height:83px; background-position: -160px -119px}
+.TapeMeasure {width:152px; height:22px; background-position: -2px -178px}
+.logo {background-position: -160px -39px}
+
+/*/////////////////PROPERTIES//////////////*/
+
+#logo {
+    bottom: 8px;
+    left: 9px;
+    width: 45px;
+    height: 45px;
+    background: url("logo.png") no-repeat;
+    background-size:100% 100%;
+}
+
+#background,#elementsKitchen,#bg_dark,#copyContainer,#endFrame {
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 250px;
+}
+
+#copy01 {
+    letter-spacing: 0px;
+    line-height: 30px;
+    color: #FFF;
+    font-size: 27px;
+    width: 300px;
+    text-align: left;
+    top: 55px;
+    left: 23px;
+}
+
+#copy02 {
+    letter-spacing: 0px;
+    line-height: 30px;
+    color: #FFF;
+    font-size: 27px;
+    width: 300px;
+    text-align: left;
+    top: 55px;
+    left: 25px;
+}
+/*///--ELEMENTS--///*/
+#element01  {top:0px;left:0px;}
+#element02  {top:0px;left:0px;}
+#element03  {top:0px;left:0px;}
+#element04  {top:0px;left:0px;}
+#element05  {top:0px;left:0px;}
+#element06  {top:0px;left:0px;}
+#element07  {top:0px;left:0px;}
+#element08  {top:0px;left:0px;}
+#element09  {top:0px;left:0px;}
+
+/*--/////////////////////////////////////////////////END-FRAME--*/
+.title  {font-size:18px;width:100%;text-align:left;letter-spacing: .5px;}
+.bullet {font-size:13px;width:100%;text-align:center;letter-spacing: .7px;font-family: 'BentonSans-Md';}
+.legal  {font-size:8px;width:100%;text-align:center;letter-spacing: .5px;font-family: 'BentonSans-Md';}
+
+#copyEF01 {top:21px; left:33px; width: 227px; height: 42px; background: url(loansLogo.png) no-repeat;}
+#copyEF02 {top:79px;color:#FFF;}
+#copyEF03 {top:107px;color:#FFF;}
+#copyEF04 {top:134px;color:#FFF;}
+#copyEF05 {top:161px;color:#FFF;}
+#copyEF06 {top:232px;color:#FFF;}
+
+.line  {width:105px;height:1px;background-color:#a9a9a9;}
+#line01{top:100px;}
+#line02{top:127px;}
+#line03{top:154px;}
+/*--/////////////////////////////////////////////////END-FRAME--*/
+
+#ctaBTN {
+    overflow: hidden;
+    width: 129px;
+    height: 32px;
+    top: 193px;
+    left: 0px;
+    opacity: 1;
+    z-index: 5;
+    background-color: #FFF;
+    background-image: linear-gradient(45deg, rgba(0, 160, 220,0) 12%,rgba(0, 160, 220,0) 13%,rgba(0, 160, 220,0.5) 30%,rgba(0, 160, 220,1) 51%,rgba(0, 160, 220,0.5) 72%,rgba(0, 160, 220,0.43) 74%,rgba(0, 160, 220,0) 87%,rgba(0, 160, 220,0) 88%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background-repeat: no-repeat;
+    background-position: -129px 0;
+    border-radius: 6px;
+}
+
+#ctaCopy {
+    letter-spacing: 0px;
+    color: #00a0de;
+    font-size: 13px;
+    width: 129px;
+    text-align: center;
+    line-height: 2.4;
+}
+
+#ctaShimmer {
+    top: 0px;
+    left: -129px;
+    opacity: 1;
+    width: 120px;
+    height: 33px;
+    z-index: 6;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#999999+12,999999+30,999999+51,ffffff+74,999999+74,999999+88&0+13,0.5+30,1+51,0.5+72,0+87 */
+background: -moz-linear-gradient(45deg, rgba(0, 160, 220,0) 12%, rgba(0, 160, 220,0) 13%, rgba(0, 160, 220,0.5) 30%, rgba(0, 160, 220,1) 51%, rgba(0, 160, 220,0.5) 72%, rgba(0, 160, 220,0.43) 74%, rgba(0, 160, 220,0) 87%, rgba(0, 160, 220,0) 88%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, rgba(0, 160, 220,0) 12%,rgba(0, 160, 220,0) 13%,rgba(0, 160, 220,0.5) 30%,rgba(0, 160, 220,1) 51%,rgba(0, 160, 220,0.5) 72%,rgba(0, 160, 220,0.43) 74%,rgba(0, 160, 220,0) 87%,rgba(0, 160, 220,0) 88%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, rgba(0, 160, 220,0) 12%,rgba(0, 160, 220,0) 13%,rgba(0, 160, 220,0.5) 30%,rgba(0, 160, 220,1) 51%,rgba(0, 160, 220,0.5) 72%,rgba(0, 160, 220,0.43) 74%,rgba(0, 160, 220,0) 87%,rgba(0, 160, 220,0) 88%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00999999', endColorstr='#00999999',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    opacity: .7;
+}
+/*///-BACKGROUND-///*/
+#background {
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 250px;
+    background: url('background.jpg') no-repeat;
+}
+
+#dark01 {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+60,0.65+100 */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 60%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 60%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    width: 200%;
+    height: 100%;
+    opacity: .7;
+}
+#dark02 {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+    opacity: 0.25;
+}
+
+#travelObjects {
+	position: absolute;
+}
+
+#ticket {
+	background: url(travelObjects_0002s_0000_Ticket.png) no-repeat;
+	width: 102px;
+	height: 43px;
+	left: 92px;
+	top: 156px;
+}
+
+#penguin {
+	background: url(travelObjects_0002s_0001_Penguin.png) no-repeat;
+	width: 34px;
+	height: 39px;
+	left: 239px;
+	top: 67px;
+}
+
+#book {
+	background: url(travelObjects_0002s_0002_Blue-Book.png) no-repeat;
+	width: 92px;
+	height: 162px;
+	left: 0px;
+	top: 0px;
+}
+
+#iceberg {
+	background: url(travelObjects_0002s_0003_Layered-Iceberg.png) no-repeat;
+	width: 76px;
+	height: 60px;
+	left: 164px;
+	top: 59px;
+}
+
+#antarctica {
+	background: url(travelObjects_0002s_0004_Antarctica-Book.png) no-repeat;
+	width: 76px;
+	height: 106px;
+	left: 90px;
+	top: 13px;
+}
+
+#camera {
+	background: url(travelObjects_0002s_0005_Camera.png) no-repeat;
+	width: 70px;
+	height: 37px;
+	left: 12px;
+	top: 160px;
+}
+
+#ticket {
+	background: url(travelObjects_0002s_0000_Ticket.png) no-repeat;
+	width: 102px;
+	height: 43px;
+	left: 92px;
+	top: 155px;
+}
+
+#viewfinder {
+	background: url(travelObjects_0002s_0007_Viewfinder.png) no-repeat;
+	width: 39px;
+	height: 32px;
+	left: 196px;
+	top: 158px;
+}
+
+#geometric {
+	background: url(travelObjects_0002s_0008_Geometric-Iceberg.png) no-repeat;
+	width: 91px;
+	height: 51px;
+	left: 55px;
+	top: 200px;
+}
+
+#binoculars {
+	background: url(travelObjects_0002s_0009_Binoculars.png) no-repeat;
+	width: 29px;
+	height: 60px;
+	left: 270px;
+	top: 60px;
+}
+
+#journal {
+	background: url(travelObjects_0002s_0006_Photo-Journal.png) no-repeat;
+	width: 133px;
+	height: 55px;
+	left: 167px;
+	top: 0px;
+}
+
+#socks {
+	background: url(travelObjects_0002s_0010_Socks-and-mug.png) no-repeat;
+	width: 155px;
+	height: 131px;
+	left: 145px;
+	top: 120px;
+}
+
+#vignette {
+	position: absolute;
+	background: url(vignette.png);
+	width: 300px;
+	height: 250px;
+}
+
+#dark {
+	position: absolute;
+	background-color: black;
+	width: 300px;
+	height: 250px;
+	opacity: 0;
+}

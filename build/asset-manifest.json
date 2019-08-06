@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b23885d2.chunk.css",
+    "main.js": "/static/js/main.53168725.chunk.js",
+    "main.js.map": "/static/js/main.53168725.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.9a9a4ce2.chunk.js": "/static/js/2.9a9a4ce2.chunk.js",
+    "static/js/2.9a9a4ce2.chunk.js.map": "/static/js/2.9a9a4ce2.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.8af23498361039f37b157777d61f3355.js": "/precache-manifest.8af23498361039f37b157777d61f3355.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.b23885d2.chunk.css.map": "/static/css/main.b23885d2.chunk.css.map",
+    "static/media/Photomanip.mp4": "/static/media/Photomanip.81626e9c.mp4",
+    "static/media/behance-logo.svg": "/static/media/behance-logo.9a47af78.svg",
+    "static/media/App.css": "/static/media/logoDaniel.4fb92dec.svg",
+    "static/media/linkedin-logo.svg": "/static/media/linkedin-logo.d0051fea.svg",
+    "static/media/youtube-play-button.svg": "/static/media/youtube-play-button.d4df6cb8.svg"
+  }
+}

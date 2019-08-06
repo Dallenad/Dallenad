@@ -1,0 +1,246 @@
+$charset "utf-8";
+/* CSS Document */
+/* -------------------------------- Import Fonts -------------------------------- */
+$font-face {
+    font-family: 'BentonSans';
+    src: local("Benton Sans Regular");
+    src: url("https://www.aexp-static.com/nav/ngn/fonts/3be50273-0b2e-4aef-ae68-882eacd611f9-2.eot");
+    src: url("https://www.aexp-static.com/nav/ngn/fonts/3be50273-0b2e-4aef-ae68-882eacd611f9-2.eot?") format("embedded-opentype"),url("https://www.aexp-static.com/nav/ngn/fonts/3be50273-0b2e-4aef-ae68-882eacd611f9-3.woff") format("woff"),url("https://www.aexp-static.com/nav/ngn/fonts/3be50273-0b2e-4aef-ae68-882eacd611f9-1.ttf") format("truetype"),url("https://www.aexp-static.com/nav/ngn/fonts/3be50273-0b2e-4aef-ae68-882eacd611f9-4.svg#web") format("svg");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+$font-face {
+    font-family: 'BentonSans-Bk';
+    src: local("Benton Sans Book");
+    src: url("https://www.aexp-static.com/nav/ngn/fonts/325e6ad0-38fb-4bad-861c-d965eab101d5-2.eot");
+    src: url("https://www.aexp-static.com/nav/ngn/fonts/325e6ad0-38fb-4bad-861c-d965eab101d5-2.eot?") format("embedded-opentype"),url("https://www.aexp-static.com/nav/ngn/fonts/325e6ad0-38fb-4bad-861c-d965eab101d5-3.woff") format("woff"),url("https://www.aexp-static.com/nav/ngn/fonts/325e6ad0-38fb-4bad-861c-d965eab101d5-1.ttf") format("truetype"),url("https://www.aexp-static.com/nav/ngn/fonts/325e6ad0-38fb-4bad-861c-d965eab101d5-4.svg#web") format("svg");
+    font-style: normal;
+    font-weight: normal;
+}
+
+$font-face {
+    font-family: 'BentonSans-Md';
+    src: local("Benton Sans Medium");
+    src: url("https://www.aexp-static.com/nav/ngn/fonts/0fababca-4914-46dd-9b0f-efbd51f67ae8-2.eot");
+    src: url("https://www.aexp-static.com/nav/ngn/fonts/0fababca-4914-46dd-9b0f-efbd51f67ae8-2.eot?") format("embedded-opentype"),url("https://www.aexp-static.com/nav/ngn/fonts/0fababca-4914-46dd-9b0f-efbd51f67ae8-3.woff") format("woff"),url("https://www.aexp-static.com/nav/ngn/fonts/0fababca-4914-46dd-9b0f-efbd51f67ae8-1.ttf") format("truetype"),url("https://www.aexp-static.com/nav/ngn/fonts/0fababca-4914-46dd-9b0f-efbd51f67ae8-4.svg#web") format("svg");
+    font-style: normal;
+    font-weight: bold;
+}
+
+$font-face {
+  font-family: 'BentonSans-Bd';
+  src: local("Benton Sans Bold");
+  src: url("https://www.aexp-static.com/nav/ngn/fonts/342cdec0-7d5d-43a9-84bf-8a77730526ee-2.eot");
+  src: url("https://www.aexp-static.com/nav/ngn/fonts/342cdec0-7d5d-43a9-84bf-8a77730526ee-2.eot?") format("embedded-opentype"),url("https://www.aexp-static.com/nav/ngn/fonts/342cdec0-7d5d-43a9-84bf-8a77730526ee-3.woff") format("woff"),url("https://www.aexp-static.com/nav/ngn/fonts/342cdec0-7d5d-43a9-84bf-8a77730526ee-1.ttf") format("truetype"),url("https://www.aexp-static.com/nav/ngn/fonts/342cdec0-7d5d-43a9-84bf-8a77730526ee-4.svg#web") format("svg");
+  font-style: normal;
+  font-weight: bold
+}
+
+body {
+	margin: 0;
+}
+
+#content {
+	width: 970px;
+	height: 250px;
+	display: none;
+	border: 1px solid black;
+	position: relative;
+	cursor: pointer;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	overflow: hidden;
+	background-image: linear-gradient(to right, rgba(255, 131, 30, 1), rgba(255, 49, 93, 1));
+    font-family: 'BentonSans-Bd', sans-serif;
+    color: #fff;
+    -webkit-font-smoothing: antialiased; /* Display font better on Mac */
+    -moz-osx-font-smoothing: grayscale; /* Display font better on Mac */
+}
+
+#maze {
+	background: url(maze.png) no-repeat 0 -69px;
+	position: absolute;
+	width: 360px;
+	height: 250px;
+	left: 616px;
+	z-index: +1;
+}
+
+#arrow {
+	position: absolute;
+	background: url(play.png) no-repeat;
+	width: 19px;
+	height: 17px;
+	left: 597px;
+	top: 198px;
+}
+
+#text1_1 {
+	position: absolute;
+	left: 34px;
+	top: 39px;
+	text-align: left;
+	font-size: 25px;
+	line-height: 0;
+	z-index: +1;
+}
+
+#text1_2 {
+	position: absolute;
+	left: 54px;
+	top: 66px;
+	text-align: left;
+	font-size: 45px;
+	line-height: 0.4;
+	z-index: +1;
+}
+
+#text1_3 {
+	position: absolute;
+	left: 47px;
+	top: 111px;
+	text-align: left;
+	font-size: 25px;
+	line-height: 0;
+	z-index: +1;
+}
+
+#text1_4 {
+	position: absolute;
+	left: 310px;
+	top: 174px;
+	text-align: left;
+	font-size: 25px;
+	line-height: 0;
+	z-index: +1;
+}
+
+#text1_5 {
+	position: absolute;
+	left: 378px;
+	top: 201px;
+	text-align: left;
+	font-size: 25px;
+	line-height: 0;
+	z-index: +1;
+}
+
+#text1_6 {
+	position: absolute;
+	left: 557px;
+	top: 162px;
+	text-align: left;
+	line-height: 0;
+	font-size: 11px;
+	font-family: 'BentonSans', 'sans_serif';
+	z-index: +1;
+}
+
+#text2_1 {
+	position: absolute;
+	left: 95px;
+	top: 76px;
+	text-align: left;
+	line-height: 0.4;
+	font-size: 55px;
+	z-index: +1;
+}
+
+#text2_2 {
+	position: absolute;
+	left: 269px;
+	top: 131px;
+	text-align: left;
+	line-height: 0;
+	font-size: 35px;
+	z-index: +1;
+}
+
+#text3_1 {
+	position: absolute;
+	left: 97px;
+	top: 46px;
+	text-align: left;
+	line-height: 0;
+	font-size: 29px;
+	z-index: +1;
+}
+
+#text3_2 {
+	position: absolute;
+	left: 128px;
+	top: 78px;
+	text-align: left;
+	line-height: 0.4;
+	font-size: 58px;
+	z-index: +1;
+}
+
+#text3_3 {
+	position: absolute;
+	left: 461px;
+	top: 132px;
+	text-align: left;
+	line-height: 0;
+	font-size: 29px;
+	z-index: +1;
+}
+
+#route {
+	position: absolute;
+	width: 337px;
+	height: 234px;
+	left: 624px;
+	top: 11px;
+	background: url(route.png) no-repeat;
+	z-index: +1;
+}
+
+#character {
+  	position: absolute;
+	width: 33px;
+	height: 53px;
+  	left: 553px;
+	top: 176px;
+	background: url(character.png) no-repeat;
+	z-index: +1;
+}
+
+#cta {
+	position: absolute;
+	width: 141px;
+	height: 34px;
+	right: 26px;
+	bottom: 22px;
+	background-color: white;
+	color: #ff345b;
+	text-align: center;
+	line-height: 37px;
+	font-size: 17px;
+	font-family: 'BentonSans-Md', 'sans_serif';
+	z-index: +1;
+	overflow: hidden;
+}
+
+#logo {
+	position: absolute;
+	background: url(logo.png) no-repeat;
+	width: 167px;
+	height: 34px;
+	left: 26px;
+	bottom: 22px;
+	z-index: +1;
+}
+
+#ctaShine {
+	position: absolute;
+	width: 141px;
+	height: 141px;
+	top: -55px;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(to bottom right, rgba(255, 52, 91, 0), rgba(255, 52, 91, 0), rgba(255, 52, 91, 0.4), rgba(255, 52, 91, 0), rgba(255, 52, 91, 0));
+	background-position: -141px 0;
+}

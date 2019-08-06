@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,800');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap');
+$purple: hsl(301, 81, 27);
+$cyan: hsl(202, 89, 42);
+$green: hsl(97, 34, 44);
+
+body {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+    border:0;
+    outline:0;
+    vertical-align:baseline;
+    background:transparent;
+	line-height: 1;
+	position: relative;
+	color: $purple;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	text-align: center;
+}
+
+div {
+	position:absolute;
+	background-repeat:no-repeat !important;
+}
+
+#container {
+	background-color: white;
+	background-image: url(../assets/bg.png);
+	background-position: 100px 0px;
+	width: 728px;
+	height: 90px;
+	border: 1px solid black;
+	display: block;
+	cursor: pointer;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden;
+	opacity: 0;
+}
+
+#logo {
+	background-image: url(../assets/logo.png);
+	background-size: contain;
+	width: 101px;
+	height: 80px;
+	top: 5px;
+	left: 10px;
+}
+
+#cta {
+	background-color: $purple;
+	color: white;
+	border-radius: 25px;
+	padding: 10px 15px;
+	font-size: 16px;
+	font-weight: bold;
+	box-shadow: 2px 2px 2px black;
+	right: 10px;
+	top: 25px;
+	font-family: "Open Sans", sans-serif;
+}
+
+#mainMessage {
+	font-size: 28px;
+	left: 150px;
+	top: 12px;
+	width: 200px;
+	line-height: 1.1;
+	color: $cyan;
+	background: -webkit-linear-gradient(0deg, $green, $cyan);
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+.submessage {
+	left: 420px;
+	top: 20px;
+	width: 100px;
+    font-size:22px;
+}
